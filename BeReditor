@@ -1,0 +1,268 @@
+#!/usr/bin/env python3
+
+from tkinter import *
+from principais_classes import *
+
+
+######################### CORES #####################################
+
+vermelho = "#ff0000"
+azul = "#3333cc"
+rosa = "#ff1a75"
+roxo = "#800080"
+laranja =  "#e65c00"
+preto =  "#000000"
+marrom = "#804000"
+branco = "#ffffff"
+verde = "#00cc00"
+azul_marinho = "#00ccff"
+cinza = "#8a8a5c"
+
+
+lista_de_cores = {'vermelho': vermelho, 
+                  'azul': azul, 
+                  'rosa': rosa,
+                  'roxo': roxo,
+                  'laranja': laranja,
+                  'preto': preto,
+                  'marrom': marrom,
+                  'branco': branco,
+                  'verde': verde,
+                  'azul_marinho': azul_marinho,
+                  'cinza': cinza,
+                  }
+
+
+def cor_vermelho():
+  inicie.cor_da_fonte = vermelho
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, 
+                      fg=inicie.cor_da_fonte)
+
+
+
+def cor_azul():
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, fg=azul)
+  inicie.cor_da_fonte = azul
+
+
+def cor_rosa():
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, fg=rosa)
+  inicie.cor_da_fonte = rosa
+
+
+def cor_roxo():
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, fg=roxo)
+  inicie.cor_da_fonte = roxo
+
+
+def cor_laranja():
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, fg=laranja)
+  inicie.cor_da_fonte = laranja
+
+
+def cor_preto():
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, fg=preto)
+  inicie.cor_da_fonte = preto
+
+
+def cor_marrom():
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, fg=marrom)
+  inicie.cor_da_fonte = marrom
+
+
+def cor_branco():
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, fg=branco)
+  inicie.cor_da_fonte = branco
+
+
+def cor_verde():
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, fg=verde)
+  inicie.cor_da_fonte = verde
+
+
+def cor_azul_marinho():
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, fg=azul_marinho)
+  inicie.cor_da_fonte = azul_marinho
+
+
+def cor_cinza():
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, fg=cinza)
+  inicie.cor_da_fonte = cinza
+
+################################################################
+
+
+
+def aumentando_fonte():
+  
+  inicie.tamanho_da_fonte += 1
+
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg="#999966", fg=inicie.cor_da_fonte)
+  print(inicie.tamanho_da_fonte)
+
+
+
+
+
+################################################################
+
+#               CORES DE FUNDO
+
+def cor_vermelho_fundo():
+    inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), 
+                                                  bg=vermelho, fg=inicie.cor_da_fonte)
+    inicie.cor_de_fundo = vermelho
+
+
+def cor_azul_fundo():
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), 
+                                                  bg=azul, fg=inicie.cor_da_fonte)
+  inicie.cor_de_fundo = azul
+
+
+
+def cor_rosa_fundo():
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), 
+                                                  bg=rosa, fg=inicie.cor_da_fonte)
+  inicie.cor_de_fundo = rosa
+
+
+def cor_roxo_fundo():
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), 
+                                                  bg=roxo, fg=inicie.cor_da_fonte)
+  inicie.cor_de_fundo = roxo
+
+
+def cor_laranja_fundo():
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), 
+                                                  bg=laranja, fg=inicie.cor_da_fonte)
+  inicie.cor_de_fundo = laranja
+
+
+def cor_preto_fundo():
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), 
+                                                  bg=preto, fg=inicie.cor_da_fonte)
+  inicie.cor_de_fundo = preto
+
+
+def cor_marrom_fundo():
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), 
+                                                  bg=marrom, fg=inicie.cor_da_fonte)
+  inicie.cor_de_fundo = marrom
+
+
+def cor_branco_fundo():
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), 
+                                                  bg=branco, fg=inicie.cor_da_fonte)
+  inicie.cor_de_fundo = branco
+
+
+def cor_verde_fundo():
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), 
+                                                  bg=verde, fg=inicie.cor_da_fonte)
+  inicie.cor_de_fundo = verde
+
+
+def cor_azul_marinho_fundo():
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), 
+                                                  bg=azul_marinho, fg=inicie.cor_da_fonte)
+  inicie.cor_de_fundo = azul_marinho
+
+
+def cor_cinza_fundo():
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), 
+                                                  bg=cinza, fg=inicie.cor_da_fonte)
+  inicie.cor_de_fundo = cinza
+
+
+
+################################################################
+
+
+
+# Iniciando a instancia principal aqui
+inicie = PrincipaisFunc()
+
+
+# Menu superior
+menubar = Menu(inicie.root)
+
+
+#filemenu sendo uma instancia de Menu
+filemenu = Menu(menubar, tearoff=0)
+menubar.config(bg="#000000", fg="#ffffff")
+filemenu.config(bg="#000000", fg="#ffffff")
+
+#atributos da instancia filemenu
+filemenu.add_command(label="Novo", command=inicie.novo_arquivo)
+filemenu.add_command(label="Abrir", command=inicie.abrir_arquivo)
+filemenu.add_command(label="Salvar", command=inicie.salvar)
+filemenu.add_command(label="Salvar como", command=inicie.salvar_como)
+filemenu.add_command(label="Aumentar fonte", command=aumentando_fonte)
+filemenu.add_separator()
+filemenu.add_command(label="Sair", command=inicie.root.quit)
+
+#Adicionando filemenu no menubar do tkinter
+menubar.add_cascade(menu=filemenu, label="Arquivo")
+menubar.config(bg="#000000", fg=cinza)
+filemenu.config(bg=preto, fg=cinza)
+
+#cores sendo uma instancia de Menu
+cores = Menu(menubar, tearoff=0)
+
+# sem sucesso com for =(
+cores.add_command(label='vermelho', command=cor_vermelho)
+cores.add_command(label='azul', command=cor_azul)
+cores.add_command(label='rosa', command=cor_rosa)
+cores.add_command(label='roxo', command=cor_roxo)
+cores.add_command(label='laranja', command=cor_laranja)
+cores.add_command(label='preto', command=cor_preto)
+cores.add_command(label='marrom', command=cor_marrom)
+cores.add_command(label='branco', command=cor_branco)
+cores.add_command(label='verde', command=cor_verde)
+cores.add_command(label='azul_marinho', command=cor_azul_marinho)
+cores.add_command(label='cinza', command=cor_cinza)
+
+
+# Adicionando o cores no menubar do tkinter
+menubar.add_cascade(menu=cores, label="Texto")
+cores.config(bg=preto, fg=cinza)
+
+#cores de fundo sendo uma instancia de Menu
+cores_fundo = Menu(menubar, tearoff=0)
+
+# sem sucesso com for =(
+cores_fundo.add_command(label='vermelho', command=cor_vermelho_fundo)
+cores_fundo.add_command(label='azul', command=cor_azul_fundo)
+cores_fundo.add_command(label='rosa', command=cor_rosa_fundo)
+cores_fundo.add_command(label='roxo', command=cor_roxo_fundo)
+cores_fundo.add_command(label='laranja', command=cor_laranja_fundo)
+cores_fundo.add_command(label='preto', command=cor_preto_fundo)
+cores_fundo.add_command(label='marrom', command=cor_marrom_fundo)
+cores_fundo.add_command(label='branco', command=cor_branco_fundo)
+cores_fundo.add_command(label='verde', command=cor_verde_fundo)
+cores_fundo.add_command(label='azul_marinho', command=cor_azul_marinho_fundo)
+cores_fundo.add_command(label='cinza', command=cor_cinza_fundo)
+
+
+# Adicionando o cores no menubar do tkinter
+menubar.add_cascade(menu=cores_fundo, label="Fundo")
+cores_fundo.config(bg=preto, fg=cinza)
+
+#Verificando se possui argumento logo na linha de comando
+try:
+  print(sys.argv[1])
+  inicie.caminho = './' + str(sys.argv[1])
+  print(inicie.caminho)
+  inicie.abrir_arquivo_argumento()
+except IndexError:
+  pass
+except FileNotFoundError:
+  pass
+
+
+# Loop do programa
+inicie.root.config(menu=menubar)
+
+inicie.root.mainloop()
+
