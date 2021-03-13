@@ -7,13 +7,13 @@ class PrincipaisFunc:
     
     self.root = Tk()
     self.root.title("BeReditor")
-
+    self.root.configure(background="#000000")
 
     self.mensagem = StringVar()
     self.mensagem.set("Bem vindo programador")
     
-    
-    self.monitor = Label(self.root, textvar=self.mensagem, justify="left") 
+    self.monitor = Label(self.root, textvar=self.mensagem, justify="left", 
+                         bg="#000000" , fg="#999966") 
     self.monitor.pack(side="bottom")
     
     self.tamanho_da_fonte = int(14)
@@ -22,9 +22,8 @@ class PrincipaisFunc:
 
     self.texto = Text(self.root)
     self.texto.pack(fill="both", expand=1)
-    self.texto.config(bd=0, padx=6, pady=4, font=('helvetica', self.tamanho_da_fonte), 
+    self.texto.config(bd=0, padx=6, pady=4, font=('helvetica', self.tamanho_da_fonte, 'bold'), 
                                                   bg=self.cor_de_fundo, fg=self.cor_da_fonte)
-
 
     self.caminho = None
 
@@ -35,7 +34,6 @@ class PrincipaisFunc:
    def abrir_arquivo(self):
     
     self.mensagem.set("Abrir arquivo")
-    #self.mensagem.set(f'{caminho}')
     
     self.caminho = Filedialog.askopenfilename(initialdir=".",
                                               filetypes=(("Arquivos de texto", "*"),),
@@ -64,6 +62,7 @@ class PrincipaisFunc:
 
 ##################################################################################
 
+
    def modificando_arquivo(self):
  
     texto_digitado = self.texto.get(1.0, "end-1c")
@@ -76,15 +75,13 @@ class PrincipaisFunc:
 
 
    def novo_arquivo(self):
-    
-    #self.caminho = None
           
     self.mensagem.set("Novo arquivo")
     self.texto.delete(1.0, END)
 
 
-
 ##################################################################################
+
 
    def salvar_como(self):
     self.mensagem.set("Salvar como")
@@ -114,4 +111,3 @@ class PrincipaisFunc:
 
 
 ##################################################################################
-
