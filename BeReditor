@@ -97,7 +97,7 @@ def aumentando_fonte():
   
   inicie.tamanho_da_fonte += 1
 
-  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg="#999966", fg=inicie.cor_da_fonte)
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, fg=inicie.cor_da_fonte)
   print(inicie.tamanho_da_fonte)
 
 
@@ -190,27 +190,28 @@ menubar = Menu(inicie.root)
 
 #filemenu sendo uma instancia de Menu
 filemenu = Menu(menubar, tearoff=0)
-menubar.config(bg="#000000", fg="#ffffff")
-filemenu.config(bg="#000000", fg="#ffffff")
+menubar.config(bg=preto, fg=branco)
+filemenu.config(bg=preto, fg=branco)
 
 #atributos da instancia filemenu
-filemenu.add_command(label="Novo", command=inicie.novo_arquivo)
 filemenu.add_command(label="Abrir", command=inicie.abrir_arquivo)
 filemenu.add_command(label="Salvar", command=inicie.salvar)
 filemenu.add_command(label="Salvar como", command=inicie.salvar_como)
-filemenu.add_command(label="Aumentar fonte", command=aumentando_fonte)
+filemenu.add_command(label="Novo", command=inicie.novo_arquivo)
 filemenu.add_separator()
 filemenu.add_command(label="Sair", command=inicie.root.quit)
 
 #Adicionando filemenu no menubar do tkinter
 menubar.add_cascade(menu=filemenu, label="Arquivo")
-menubar.config(bg="#000000", fg=cinza)
+menubar.config(bg=preto, fg=cinza)
 filemenu.config(bg=preto, fg=cinza)
 
 #cores sendo uma instancia de Menu
 cores = Menu(menubar, tearoff=0)
 
 # sem sucesso com for =(
+cores.add_command(label="Aumentar fonte", command=aumentando_fonte)
+cores.add_separator()
 cores.add_command(label='vermelho', command=cor_vermelho)
 cores.add_command(label='azul', command=cor_azul)
 cores.add_command(label='rosa', command=cor_rosa)
@@ -251,9 +252,9 @@ cores_fundo.config(bg=preto, fg=cinza)
 
 #Verificando se possui argumento logo na linha de comando
 try:
-  print(sys.argv[1])
+  #print(sys.argv[1])
   inicie.caminho = './' + str(sys.argv[1])
-  print(inicie.caminho)
+  #print(inicie.caminho)
   inicie.abrir_arquivo_argumento()
 except IndexError:
   pass
@@ -263,6 +264,4 @@ except FileNotFoundError:
 
 # Loop do programa
 inicie.root.config(menu=menubar)
-
 inicie.root.mainloop()
-
