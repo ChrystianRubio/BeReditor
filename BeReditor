@@ -35,58 +35,58 @@ lista_de_cores = {'vermelho': vermelho,
 
 def cor_vermelho():
   inicie.cor_da_fonte = vermelho
-  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, 
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte, 'bold'), bg=inicie.cor_de_fundo, 
                       fg=inicie.cor_da_fonte)
 
 
 
 def cor_azul():
-  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, fg=azul)
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte, 'bold'), bg=inicie.cor_de_fundo, fg=azul)
   inicie.cor_da_fonte = azul
 
 
 def cor_rosa():
-  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, fg=rosa)
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte, 'bold'), bg=inicie.cor_de_fundo, fg=rosa)
   inicie.cor_da_fonte = rosa
 
 
 def cor_roxo():
-  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, fg=roxo)
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte, 'bold'), bg=inicie.cor_de_fundo, fg=roxo)
   inicie.cor_da_fonte = roxo
 
 
 def cor_laranja():
-  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, fg=laranja)
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte, 'bold'), bg=inicie.cor_de_fundo, fg=laranja)
   inicie.cor_da_fonte = laranja
 
 
 def cor_preto():
-  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, fg=preto)
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte, 'bold'), bg=inicie.cor_de_fundo, fg=preto)
   inicie.cor_da_fonte = preto
 
 
 def cor_marrom():
-  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, fg=marrom)
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte, 'bold'), bg=inicie.cor_de_fundo, fg=marrom)
   inicie.cor_da_fonte = marrom
 
 
 def cor_branco():
-  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, fg=branco)
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte, 'bold'), bg=inicie.cor_de_fundo, fg=branco)
   inicie.cor_da_fonte = branco
 
 
 def cor_verde():
-  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, fg=verde)
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte, 'bold'), bg=inicie.cor_de_fundo, fg=verde)
   inicie.cor_da_fonte = verde
 
 
 def cor_azul_marinho():
-  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, fg=azul_marinho)
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte, 'bold'), bg=inicie.cor_de_fundo, fg=azul_marinho)
   inicie.cor_da_fonte = azul_marinho
 
 
 def cor_cinza():
-  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, fg=cinza)
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte, 'bold'), bg=inicie.cor_de_fundo, fg=cinza)
   inicie.cor_da_fonte = cinza
 
 ################################################################
@@ -97,7 +97,7 @@ def aumentando_fonte():
   
   inicie.tamanho_da_fonte += 1
 
-  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), bg=inicie.cor_de_fundo, fg=inicie.cor_da_fonte)
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte, 'bold'), bg=inicie.cor_de_fundo, fg=inicie.cor_da_fonte)
   print(inicie.tamanho_da_fonte)
 
 
@@ -109,68 +109,68 @@ def aumentando_fonte():
 #               CORES DE FUNDO
 
 def cor_vermelho_fundo():
-    inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), 
+    inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte, 'bold'), 
                                                   bg=vermelho, fg=inicie.cor_da_fonte)
     inicie.cor_de_fundo = vermelho
 
 
 def cor_azul_fundo():
-  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), 
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte, 'bold'), 
                                                   bg=azul, fg=inicie.cor_da_fonte)
   inicie.cor_de_fundo = azul
 
 
 
 def cor_rosa_fundo():
-  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), 
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte, 'bold'), 
                                                   bg=rosa, fg=inicie.cor_da_fonte)
   inicie.cor_de_fundo = rosa
 
 
 def cor_roxo_fundo():
-  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), 
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte, 'bold'), 
                                                   bg=roxo, fg=inicie.cor_da_fonte)
   inicie.cor_de_fundo = roxo
 
 
 def cor_laranja_fundo():
-  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), 
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte, 'bold'), 
                                                   bg=laranja, fg=inicie.cor_da_fonte)
   inicie.cor_de_fundo = laranja
 
 
 def cor_preto_fundo():
-  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), 
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte, 'bold'), 
                                                   bg=preto, fg=inicie.cor_da_fonte)
   inicie.cor_de_fundo = preto
 
 
 def cor_marrom_fundo():
-  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), 
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte, 'bold'), 
                                                   bg=marrom, fg=inicie.cor_da_fonte)
   inicie.cor_de_fundo = marrom
 
 
 def cor_branco_fundo():
-  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), 
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte, 'bold'), 
                                                   bg=branco, fg=inicie.cor_da_fonte)
   inicie.cor_de_fundo = branco
 
 
 def cor_verde_fundo():
-  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), 
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte, 'bold'), 
                                                   bg=verde, fg=inicie.cor_da_fonte)
   inicie.cor_de_fundo = verde
 
 
 def cor_azul_marinho_fundo():
-  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), 
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte, 'bold'), 
                                                   bg=azul_marinho, fg=inicie.cor_da_fonte)
   inicie.cor_de_fundo = azul_marinho
 
 
 def cor_cinza_fundo():
-  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte), 
+  inicie.texto.config(bd=0, padx=6, pady=4, font=('helvetica', inicie.tamanho_da_fonte, 'bold'), 
                                                   bg=cinza, fg=inicie.cor_da_fonte)
   inicie.cor_de_fundo = cinza
 
